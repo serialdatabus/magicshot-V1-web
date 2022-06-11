@@ -6,6 +6,12 @@ body * {
   font-family: metropolis-regular;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+
+}
+
 @font-face {
   font-family: metropolis-bold;
   src: url(metropolis-bold.otf);
@@ -14,6 +20,12 @@ body * {
 @font-face {
   font-family: metropolis-medium;
   src: url(metropolis-medium.otf);
+}
+
+
+@font-face {
+  font-family: hemi-head;
+  src: url(hemi-head-bd-it.ttf);
 }
 
 @font-face {
@@ -88,6 +100,216 @@ display: inline-block;
     color: white;
     text-align: center;
 }
+
+
+.section-three
+{
+  z-index: 10;
+  background: rgb(169,15,33);
+  background: -moz-linear-gradient(90deg, rgba(169,15,33,1) 0%, rgba(65,2,0,1) 14%, rgba(51,24,42,1) 17%, rgba(7,118,202,1) 27%, rgba(7,118,202,1) 31%, rgba(7,118,202,1) 69%, rgba(7,118,202,1) 73%, rgba(51,24,42,1) 83%, rgba(65,2,0,1) 86%, rgba(169,15,33,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(169,15,33,1) 0%, rgba(65,2,0,1) 14%, rgba(51,24,42,1) 17%, rgba(7,118,202,1) 27%, rgba(7,118,202,1) 31%, rgba(7,118,202,1) 69%, rgba(7,118,202,1) 73%, rgba(51,24,42,1) 83%, rgba(65,2,0,1) 86%, rgba(169,15,33,1) 100%);
+  background: linear-gradient(90deg, rgba(169,15,33,1) 0%, rgba(65,2,0,1) 14%, rgba(51,24,42,1) 17%, rgba(7,118,202,1) 27%, rgba(7,118,202,1) 31%, rgba(7,118,202,1) 69%, rgba(7,118,202,1) 73%, rgba(51,24,42,1) 83%, rgba(65,2,0,1) 86%, rgba(169,15,33,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a90f21",endColorstr="#a90f21",GradientType=1);
+
+  transform: translateY(-28em);
+
+  clip-path: polygon(
+    0% 0%, 
+    14% 0, 
+    17% 4%, 
+    27% 4%, 
+    31% 9%, 
+
+
+    69% 9%, 
+    73% 4%, 
+    83% 4%, 
+    86% 0%, 
+    100% 0, 
+
+
+    100% 100%, 
+    86% 100%, 
+    83% 96%, 
+    73% 96%, 
+    69% 91%, 
+
+
+    31% 91%, 
+    27% 96%, 
+    17% 96%, 
+    14% 100%, 
+    0% 100%
+    );
+
+
+
+
+}
+
+.section-three .section-content
+{
+  padding: 10em 0;
+
+  background: rgb(14,11,77);
+  background: -moz-radial-gradient(circle, rgba(14,11,77,1) 33%, rgba(1,0,27,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(14,11,77,1) 33%, rgba(1,0,27,1) 100%);
+  background: radial-gradient(circle, rgba(14,11,77,1) 33%, rgba(1,0,27,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e0b4d",endColorstr="#01001b",GradientType=1);
+
+
+
+clip-path: polygon(
+  0% 0%, 
+  14% 2%, 
+  17% 6%, 
+  27% 6%, 
+  31% 9%, 
+
+
+  69% 9%, 
+  73% 6%, 
+  83% 6%, 
+  86% 2%, 
+  100% 0, 
+
+
+  100% 100%, 
+  86% 98%, 
+  83% 94%, 
+  73% 94%, 
+  69% 91%, 
+
+
+  31% 91%, 
+  27% 94%, 
+  17% 94%, 
+  14% 98%, 
+  0% 100%
+  );
+
+
+
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section-three .title-community
+{
+
+  font-family: metropolis-bold;
+  color: white;
+  font-size: 3em;
+  display: block;
+
+}
+
+
+
+.section-three .community-info-items-container
+{
+
+width: 100%;
+display: inline-flex;
+justify-content: center;
+padding: 2em 0;
+}
+
+
+
+
+.section-three .community-info-items-container .item-community-info
+{
+
+  width: 25em;
+  position: relative;
+  margin: 0 2em;
+
+}
+
+
+
+.section-three .community-info-items-container .item-community-info .box-community
+{
+
+  background: url(SLIDE_11_DIGITAL_1.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 13em;
+  display: inline-block;
+
+
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+
+
+}
+
+
+.section-three .community-info-items-container .item-community-info .box-community .bg-gradient
+{
+
+
+  display: inline-block;
+  width: 100%;
+height: 100%;
+  background: rgb(255,0,0);
+  background: -moz-linear-gradient(90deg, #87092b 0%, rgba(88,4,4,1) 47%, #1195fb 81%);
+  background: -webkit-linear-gradient(90deg, #87092b 0%, rgba(88,4,4,1) 47%, #1195fb 81%);
+  background: linear-gradient(90deg, #87092b 0%, rgba(88,4,4,1) 47%, #1195fb 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#0fb2fb",GradientType=1);
+  opacity: 0.7;
+
+}
+
+
+
+
+.section-three .community-info-items-container .item-community-info .text-box-community
+{
+
+  color: white;
+  display: flex;
+  margin-top: 1em;
+
+}
+
+.section-three .community-info-items-container .item-community-info .text-box-community .bar-start
+{
+  display: inline-block;
+  width: 0.7em;
+  background: orange;
+  margin-right: 1em;
+
+  background: rgb(6,99,175);
+  background: -moz-linear-gradient(0deg, rgba(6,99,175,1) 0%, rgba(7,5,50,1) 49%, rgba(9,7,58,1) 51%, rgba(215,22,50,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(6,99,175,1) 0%, rgba(7,5,50,1) 49%, rgba(9,7,58,1) 51%, rgba(215,22,50,1) 100%);
+  background: linear-gradient(0deg, rgba(6,99,175,1) 0%, rgba(7,5,50,1) 49%, rgba(9,7,58,1) 51%, rgba(215,22,50,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0663af",endColorstr="#d71632",GradientType=1);
+}
+
+.section-three .community-info-items-container .item-community-info  .logo-box-community
+{
+
+  position: absolute;
+  width: 6em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
 
 
 .section-two .txt1
@@ -263,6 +485,158 @@ width: 4em;;
 {
     text-align: left;
 }
+
+
+
+
+.section-four
+{
+
+  transform: translateY(-34em);
+  background-image: url(videogamer-winning-first-person-shooter-tournament-using-rgb-keyboard-professional-headphones-pro-player-man-talking-with-other-players-online-game-competition-powerful-computer.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.section-four .section-content{
+
+  background: rgb(255,0,0);
+  background: -moz-linear-gradient(90deg, #87092b 0%, rgba(88,4,4,1) 47%, #1195fb 81%);
+  background: -webkit-linear-gradient(90deg, #87092b 0%, rgba(88,4,4,1) 47%, #1195fb 81%);
+  background: linear-gradient(90deg, rgb(71 5 20 / 94%) 0%, #1c0b0bb5 47%, rgb(6 20 138 / 54%) 81%);
+  text-align: center;
+}
+
+
+.section-four .section-content .magic-shot-logo
+{
+
+  width: 4em;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  margin-top: 8em;
+
+}
+
+
+
+.section-four .section-content h3
+{
+color: white;
+font-family: metropolis-bold;
+font-size: 3em;
+margin-bottom: 0.3em;
+}
+
+
+.section-four .section-content p
+{
+color: white;
+padding: 0;
+font-size: 0.8em;
+}
+
+
+
+.section-four .section-content .gamelist
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  margin-bottom: 20em;
+}
+
+
+.section-four .section-content .gamelist .game-item
+{
+  background-position: center center;
+  background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  width: 14em;
+  height: 10em;
+  margin: 0 0.6em;
+  position: relative;
+
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
+
+}
+
+
+.section-four .section-content .gamelist .game-item.gm1
+{
+  background-image: url(gta-bg.jpeg);
+
+}
+
+.section-four .section-content .gamelist .game-item.gm2
+{
+  background-image: url(csgo-bg.jpeg);
+
+}
+
+
+.section-four .section-content .gamelist .game-item.gm3
+{
+  background-image: url(rust-bg.jpeg);
+
+}
+
+
+.section-four .section-content .gamelist .game-item.gm4
+{
+  background-image: url(minecraft-bg.jpeg);
+
+}
+
+
+.section-four .section-content .gamelist .game-item .gradient-bg
+{
+
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,0,0);
+  background: -moz-linear-gradient(90deg, rgb(71 5 20 / 94%) 0%, #1c0b0bb5 47%, rgb(6 20 138 / 54%) 81%);
+  background: -webkit-linear-gradient(90deg, rgb(71 5 20 / 94%) 0%, #1c0b0bb5 47%, rgb(6 20 138 / 54%) 81%);
+  background: linear-gradient(90deg, rgb(71 5 20 / 94%) 0%, #1c0b0bb5 47%, rgb(6 20 138 / 54%) 81%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#0fb2fb",GradientType=1);
+  opacity: 0.7;
+}
+
+
+
+.section-four .section-content .gamelist .game-item .game-item-logo
+{
+
+  width: 4em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
