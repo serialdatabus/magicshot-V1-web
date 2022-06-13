@@ -1286,7 +1286,7 @@ margin-top: 0.3em;
 .section-seven .section-content
 {
   padding-top: 12em;
-  padding-bottom: 30em;
+  padding-bottom: 10em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1351,6 +1351,197 @@ margin-top: 0.3em;
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+#instafeed
+{
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+
+
+
+#instafeed .instagram-post
+{
+
+  display: flex;
+  flex-direction: column;
+  width: 16em;
+  margin: 0 1em;
+  
+}
+
+
+
+#instafeed .instagram-post .top-info
+{
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
+
+} 
+
+
+
+
+#instafeed .instagram-post .top-info .top-info-left
+{
+
+  display: flex;
+  align-items: center;
+
+} 
+
+
+#instafeed .instagram-post .top-info .top-info-left .logo-info
+{
+
+display: inline-block;
+background: url(magicshot-logo.png);
+background-position: center center;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+width: 2em;
+height: 2em;
+border-radius: 100%;
+border: 1px solid white;
+
+} 
+
+
+#instafeed *
+{
+font-family: metropolis-regular;
+color: white;
+text-decoration: none;
+}
+
+
+#instafeed .instagram-post .top-info .top-info-left  .insta-owner
+{
+
+  margin-left: 0.5em;
+  font-size: 0.8em;
+
+}
+
+#instafeed .instagram-post .top-info .top-info-right
+{
+
+  display: flex;
+  align-items: center;
+
+
+} 
+
+
+#instafeed .instagram-post .top-info .top-info-right .follow-btn
+{
+
+  font-size: 0.6em;
+  border: 1px solid white;
+  padding: 0.5em 2em;
+border-radius: 0.5em;
+
+}
+
+
+#instafeed .instagram-post .top-info .top-info-right .three-dots
+{
+
+
+
+}
+
+
+#instafeed .instagram-post .top-info .top-info-right .three-dots img
+{
+
+width: 1.2em;
+margin-left: 0.2em;
+}
+
+
+#instafeed .instagram-post .post-photo
+{
+
+  width: 100%;
+  height: 16em;
+  object-fit: cover;
+
+}
+
+
+
+
+#instafeed .instagram-post .buttons-container
+{
+margin-top: 0.4em;
+display: flex;
+justify-content: space-between;
+padding: 0 0.2em;
+}
+
+
+#instafeed .instagram-post .buttons-container img
+{
+
+width: 1em;
+
+
+}
+
+#instafeed .instagram-post .buttons-container .btn-left
+{
+
+
+
+}
+
+
+#instafeed .instagram-post .buttons-container .btn-left img
+{
+
+  margin-right: 0.3em;
+
+}
+
+
+#instafeed .instagram-post .buttons-container .btn-right
+{
+
+
+
+}
+
+
+#instafeed .instagram-post .post-description
+{
+
+text-align: left;
+margin-top: 0.5em;
+font-size: 0.7em;
+
+text-overflow: ellipsis;
+overflow: hidden; 
+white-space: nowrap;
+}
 
 
 /* Extra small devices (phones, 600px and down) */

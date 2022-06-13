@@ -10,6 +10,8 @@
     <script src="./jquery-3.6.0.min.js"></script>
     <script src="./owl/owl.carousel.min.js"></script>
     <script src="./scripts.js"></script>
+    <script type="text/javascript" src="instafeed.min.js"></script>
+
 
     <title>MagicShot V1</title>
   </head>
@@ -464,6 +466,61 @@
 
         <h3 class="title-section">redes sociais</h3>
 
+        <div id="instafeed">
+
+
+<!-- 
+          <a href="" class="instagram-post">
+
+            <div class="top-info">
+              <span class="top-info-left">
+                <span class="logo-info"></span>
+                <span class="insta-owner">Magicshot</span>
+              </span>
+              <span class="top-info-right">
+                <span class="follow-btn">FOLLOW</span>
+                <span class="three-dots"><img src="option.png" /></span>
+              </span>
+            </div>
+
+            <img class="post-photo" src="SLIDE_7_FOTO_3.jpeg" />
+
+            <div class="buttons-container">
+              <span class="btn-left">
+                <img src="heart.png" />
+                <img src="chat-insta.png" />
+                <img src="send.png" />
+              </span>
+
+              <span class="btn-right">
+                <img src="bookmark-white.png" />
+              </span>
+            </div>
+
+            <p class="post-description">
+              lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            </p>
+
+
+          </a>
+ -->
+
+
+
+
+        </div>
+
+<script type="text/javascript">
+    var feed = new Instafeed({
+      accessToken: 'IGQVJXdmVTa2I3ZAWoxb0tiWXY4UVVrV3VMZAFlyb0JOVVpqbUJTWGF1X1AxaWtiWkNZAZAHpqNlZAOZAzRBTmUyZAnVMemlaUncwQmhYZAkJQeko5OEg5SGp2cHBYeE5OVHBIZADdOaFFQNUpNMEQ3WWRIdmpnRgZDZD',
+      limit: 4,
+      templaste: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
+      template: '<a href="{{link}}" class="instagram-post"> <div class="top-info"> <span class="top-info-left"> <span class="logo-info"></span> <span class="insta-owner">Magicshot</span> </span> <span class="top-info-right"> <span class="follow-btn">FOLLOW</span> <span class="three-dots"><img src="option.png"/></span> </span> </div><img class="post-photo" src="{{image}}"/> <div class="buttons-container"> <span class="btn-left"> <img src="heart.png"/> <img src="chat-insta.png"/> <img src="send.png"/> </span> <span class="btn-right"> <img src="bookmark-white.png"/> </span> </div><p class="post-description">{{caption}}</p></a>'
+
+   
+    });
+    feed.run();
+</script>
 
       </div>
     </div>
