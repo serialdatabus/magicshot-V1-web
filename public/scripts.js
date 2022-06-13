@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+    $(".home-slider").owlCarousel({
         loop:true,
         margin:10,
         nav:true,
@@ -15,4 +15,26 @@ $(document).ready(function(){
             }
         }
     });
+
+
+
+
+
+    $(".foto-carousel").owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:6
+            },
+            1000:{
+                items:6
+            }
+        }
+    });
+
   });
