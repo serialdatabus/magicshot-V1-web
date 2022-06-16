@@ -104,7 +104,7 @@ $(document).ready(function(){
 
     $("#mobile-menu .header-menu li a , #mobile-menu .top-header-mobile-menu .link-home").click(function(e){
 
-        $("#mobile-menu").addClass("closed");
+    $("#mobile-menu").addClass("closed");
         
     });
 
@@ -126,14 +126,16 @@ $(document).ready(function(){
     });
 
     $("#mobile-menu").click(function(e){
-        e.preventDefault();
 
-        if (e.target !== this)
-        return;
+        if (e.target === this)
+         {
+            $("#mobile-menu").addClass("closed");
 
-        $("#mobile-menu").addClass("closed");
+                topHeaderMenu.removeClass("hidden");
+            
+         }
 
-        topHeaderMenu.removeClass("hidden");
+       
     });
     
 
