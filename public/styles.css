@@ -862,7 +862,7 @@ position: relative;
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d94e4e",endColorstr="#0fb2fb",GradientType=1);
 
-  padding-bottom: 18em;
+  padding-bottom: 12em;
   color: white;
   text-align: center;
   margin-bottom: -9em;
@@ -1910,6 +1910,22 @@ position: relative;
 /* Extra small devices (phones, 769px and down) */
 @media only screen and (max-width: 769px) {
 
+
+  .section-four .section-content .magic-shot-logo {
+
+    margin-top: 10em;
+}
+
+.section-four .section-content .gamelist {
+  margin-bottom: 12em;
+}
+
+
+.section-six .section-content {
+;
+  padding-bottom: 12em;
+
+}
 
   #header-mobile {
     display: flex;
