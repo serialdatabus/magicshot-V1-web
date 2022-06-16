@@ -1923,7 +1923,38 @@ position: relative;
 /* Extra small devices (phones, 769px and down) */
 @media only screen and (max-width: 769px) {
 
+  .cool-header-top::after {
+    clip-path: polygon( 0% 0%, 14% 20%, 17% 54%, 27% 54%, 31% 100%, 69% 100%, 73% 54%, 83% 54%, 86% 20%, 100% 0, 100% 100%, 0% 100% );
+  }
 
+
+  .cool-header-bottom::after {
+
+    /* clip-path: polygon( 0% 0%, 14% 13%, 17% 45%, 27% 45%, 31% 100%, 69% 100%, 73% 45%, 83% 45%, 86% 13%, 100% 0, 100% 100%, 0% 100% ); */
+    clip-path: polygon( 
+      0% 100%, 
+      14% 80%, 
+      17% 46%, 
+      27% 46%, 
+      31% 0, 
+      69% 0, 
+      73% 46%, 
+      83% 46%, 
+      86% 80%, 
+      100% 100%, 
+      100% 0, 
+      0% 0 
+      );
+}
+
+.cool-header-top,
+.cool-header-bottom
+{
+
+  padding-top: 7%;
+
+}
+  
   .section-five {
 
     margin-bottom: -3em;
