@@ -267,7 +267,7 @@ body {
   width: 2em;
 }
 
-#top-header-menu.sticky.hidden {
+#top-header-menu.hidden {
   top: -200%;
 }
 

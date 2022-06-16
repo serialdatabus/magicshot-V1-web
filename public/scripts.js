@@ -125,6 +125,16 @@ $(document).ready(function(){
         topHeaderMenu.removeClass("hidden");
     });
 
+    $("#mobile-menu").click(function(e){
+        e.preventDefault();
+
+        if (e.target !== this)
+        return;
+
+        $("#mobile-menu").addClass("closed");
+
+        topHeaderMenu.removeClass("hidden");
+    });
     
 
   });
