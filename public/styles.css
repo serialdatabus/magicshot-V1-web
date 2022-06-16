@@ -809,6 +809,16 @@ position: relative;
   position: relative;
 }
 
+.section-one .owl-theme .owl-nav
+{
+  display: none;
+}
+
+#top-slider .owl-dots
+{
+  margin-top: 1em;
+}
+
 .section-one .section-content {
   content: "";
   background: rgb(0, 0, 0);
