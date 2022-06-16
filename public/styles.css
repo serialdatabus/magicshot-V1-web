@@ -474,6 +474,7 @@ body {
   width: 1em;
   height: 1em;
   position: relative;
+  overflow: hidden;
 }
 
 .cool-list-item .column-left .square-column::after {
@@ -765,6 +766,7 @@ position: relative;
   color: white;
   font-size: 3em;
   display: block;
+  text-align: center;
 }
 
 .section-three .community-info-items-container {
@@ -1748,8 +1750,230 @@ position: relative;
   margin-top: 0.3em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+
+}
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 769px and down) */
+@media only screen and (max-width: 769px) {
+
+  #instafeed {
+    flex-direction: column;
+}
+
+#instafeed .instagram-post {
+  margin-bottom: 3em;
+}
+
+.section-five h1,
+.section-six .title-community,
+.section-three .title-community,
+.section-four .section-content h3,
+.title-section {
+  font-size: 2em;
+
+}
+
+.section-three .title-community
+{
+  margin-bottom: 1em;
+}
+
+.section-three .section-content
+{
+  padding: 5em 0;
+  
+}
+
+.section-three .community-info-items-container
+{
+flex-direction: column;
+align-items: center;
+}
+
+.section-three .community-info-items-container .item-community-info
+{
+  margin: 0;
+  width: 23em;
+  margin-bottom: 3em;
+}
+
+
+.section-four .section-content .gamelist
+{
+  flex-direction: column;
+}
+
+.section-four .section-content .gamelist .game-item
+{
+  margin-bottom: 3em;
+  width: 80%;
+  height: auto;
+  padding-top: 50%
+}
+
+
+.section-five .container-news .main-news-container
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section-five .container-news
+{
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 5em;
+}
+
+.section-five .container-news .main-news-container .news-info-highlight
+{
+
+height: 0;
+width: 90%;
+padding-top: 80%;
+justify-content: center;
+}
+
+.section-five .container-news .main-news-container .news-desctiption-cnt{
+  padding: 0 1em;
+  width: 35em;
+}
+
+.section-five .container-news .main-news-container .news-desctiption-cnt .description-text
+{
+  font-size: 1em;
+}
+
+.section-five .news-list-container
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.section-five .cool-list-item
+{
+
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2em;
+
+}
+
+.section-five .container-news > .bar-start
+{
+
+  background: rgb(255, 0, 0);
+  background: -moz-linear-gradient( 90deg, rgba(255, 0, 0, 1) 0%, rgba(88, 4, 4, 1) 47%, rgba(15, 178, 251, 1) 81% );
+  background: -webkit-linear-gradient( 90deg, rgba(255, 0, 0, 1) 0%, rgba(88, 4, 4, 1) 47%, rgba(15, 178, 251, 1) 81% );
+  background: linear-gradient( 90deg, rgba(255, 0, 0, 1) 0%, rgba(88, 4, 4, 1) 47%, rgba(15, 178, 251, 1) 81% );
+
+  width: 84%;
+  height: 0.2em;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  flex: none;
+}
+
+
+.section-six .cool-list-item {
+  width: 90%;
+
+}
+
+.section-six .cool-list-item .column-center
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-six .cool-list-item .column-center
+{
+  text-align: center;
+}
+
+.section-six .cool-list-item .column-center > div,
+.section-six .cool-list-item .column-center > h2
+{
+margin: 0.3em 0;
+}
+
+
+.section-eight .section-content .magicshot-logo
+{
+  margin-top: 10em;
+}
+
+.section-eight .section-content .stats-container
+{
+  flex-direction: column;
+}
+
+.section-eight .section-content .stats-container .stat-item
+{
+  margin-bottom: 4em;
+}
+
+
+.section-nine .section-content
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-nine .footer-column
+{
+  text-align: center;
+  margin-bottom: 3em;
+  border-bottom: rgba(255, 255, 255, 0.527) 1px solid;
+  padding-bottom: 1em;
+}
+
+.section-nine .footer-column:last-child
+{
+
+  border-bottom: none;
+
+}
+
+.section-nine .footer-column .form-footer
+{
+  align-items: center;
+}
+
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {

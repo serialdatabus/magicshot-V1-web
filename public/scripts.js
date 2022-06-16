@@ -34,7 +34,7 @@ $(document).ready(function(){
                 items:1
             },
             600:{
-                items:6
+                items:1
             },
             1000:{
                 items:6
@@ -100,7 +100,7 @@ $(document).ready(function(){
 
     $("#toggle-menu").click(function(e){
         e.preventDefault();
-        
+
         alert(99999);
     });
 
