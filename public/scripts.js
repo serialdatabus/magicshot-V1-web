@@ -46,6 +46,11 @@ $(document).ready(function(){
 
     $(window).scroll(function() {
 
+       if(!$("#mobile-menu").hasClass("closed"))
+       {
+        return;
+       }
+
         scrollDirection = "up";
 
 
@@ -97,12 +102,29 @@ $(document).ready(function(){
 
 
 
+    $("#mobile-menu .header-menu li a , #mobile-menu .top-header-mobile-menu .link-home").click(function(e){
+
+        $("#mobile-menu").addClass("closed");
+        
+    });
 
     $("#toggle-menu").click(function(e){
         e.preventDefault();
 
-        alert(99999);
+        $("#mobile-menu").removeClass("closed");
+
+        topHeaderMenu.addClass("hidden");
+        
     });
 
+    $("#close-mobile-menu-btn").click(function(e){
+        e.preventDefault();
+
+        $("#mobile-menu").addClass("closed");
+
+        topHeaderMenu.removeClass("hidden");
+    });
+
+    
 
   });

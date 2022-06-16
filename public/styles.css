@@ -243,7 +243,6 @@ body {
   top: 0;
   width: 100%;
   transition: all ease 0.5s;
-  display: none;
 }
 
 #top-header-menu #header {
@@ -276,22 +275,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0.5em;
   display: none;
+  
 }
 
 #header-mobile .link-logo {
 }
 
 #header-mobile .link-logo .logo {
-  width: 4em;
+  width: 2.5em;
 }
 
 #header-mobile .toggle-menu {
 }
 
 #header-mobile .toggle-menu img {
-  width: 4em;
+  width: 2em;
 }
 
 #mobile-menu {
@@ -299,23 +299,93 @@ body {
   z-index: 100;
   right: 0;
   top: 0;
-  width: 95%;
+  width: 100%;
   height: 100%;
-  background-color: rgba(18, 21, 24, 0.993);
-  display: none;
+  background-color: rgb(0 0 0 / 70%);
+  transition: all ease 0.3s;
 }
 
+
+
+
+#mobile-menu > div
+{
+
+  margin-left: 5em;
+
+}
+
+#mobile-menu .bg-mobile-menu
+ {
+  background-color: rgba(18, 21, 24, 0.993);
+  height: 100%;
+
+ }
+
+#mobile-menu .mobile-menu-divider {
+  
+  padding: 0 2em;
+  transition: all ease 0.7s;
+} 
+
+
+#mobile-menu.closed .mobile-menu-divider {
+  
+  transform: translateX(100%);
+}
+
+#mobile-menu .mobile-menu-divider::after {
+  height: 0.2em;
+  width: 100%;
+  content: '';
+  display: inline-block;
+  background: rgb(255, 0, 0);
+  background: -moz-linear-gradient(
+    90deg,
+    #87092b 0%,
+    rgba(88, 4, 4, 1) 47%,
+    #1195fb 81%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #87092b 0%,
+    rgba(88, 4, 4, 1) 47%,
+    #1195fb 81%
+  );
+  background: linear-gradient(
+    90deg,
+    #87092b 0%,
+    rgba(88, 4, 4, 1) 47%,
+    #1195fb 81%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#0fb2fb",GradientType=1);
+
+}
 
 
 #mobile-menu .top-header-mobile-menu
 {
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+
+  transition: all ease 0.8s;
+  opacity: 1;
 
 }
 
+#mobile-menu.closed .top-header-mobile-menu
+{
+
+  opacity: 0;
+
+}
 #mobile-menu .top-header-mobile-menu a
 {
 
+  width: 2em;
 
 }
 
@@ -323,13 +393,13 @@ body {
 #mobile-menu .top-header-mobile-menu a img
 {
 
+  width: 1.5em;
 
 }
 
 #mobile-menu .top-header-mobile-menu a .logo
 {
-
-
+width: 2.5em;
 }
 
 
@@ -346,26 +416,76 @@ body {
 
 }
 
-#mobile-menu .top-header-mobile-menu .header-menu
+#mobile-menu  .header-menu
 {
+
+  list-style: none;
+  transition: all ease 0.9s;
+
+}
+
+
+#mobile-menu.closed  .header-menu
+{
+
+  transform: translateX(-100%) scale(0); 
+  opacity: 0;
 
 
 }
 
 
-
-#mobile-menu .top-header-mobile-menu .header-menu li
+#mobile-menu .socials
 {
 
+
+
+}
+
+
+#mobile-menu .socials a
+{
+
+
+
+}
+
+
+#mobile-menu .socials img
+{
+
+width: 1.5em;
+margin:0 0.4em;
+}
+
+
+#mobile-menu  .header-menu li
+{
+  text-align: center;
+  margin: 3em 0;
 
 }
 
 
 
 
-#mobile-menu .top-header-mobile-menu .header-menu li a
+#mobile-menu  .header-menu li a
+{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-family: 'metropolis-medium';
+}
+
+
+
+
+
+#mobile-menu.closed
 {
 
+  right: -110%;
 
 }
 
@@ -742,15 +862,17 @@ position: relative;
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d94e4e",endColorstr="#0fb2fb",GradientType=1);
 
-  height: 60em;
+  padding-bottom: 18em;
   color: white;
   text-align: center;
+  margin-bottom: -9em;
 }
+
 
 .section-three {
   z-index: 10;
+  margin-bottom: -8em;
 
-  transform: translateY(-28em);
 }
 
 .section-three .section-content {
@@ -1024,7 +1146,6 @@ position: relative;
 }
 
 .section-four {
-  transform: translateY(-34em);
   background-image: url(videogamer-winning-first-person-shooter-tournament-using-rgb-keyboard-professional-headphones-pro-player-man-talking-with-other-players-online-game-competition-powerful-computer.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1032,6 +1153,8 @@ position: relative;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  margin-bottom: -8em;
 }
 
 .section-four .section-content {
@@ -1153,8 +1276,8 @@ position: relative;
 }
 
 .section-five {
-  transform: translateY(-40em);
   z-index: 20;
+  margin-bottom: -8em;
 }
 
 .section-five .cool-list-item .column-right .square-column {
@@ -1286,7 +1409,7 @@ position: relative;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
-  transform: translateY(-47em);
+  margin-bottom: -8em;
 }
 
 .section-six .section-content {
@@ -1396,8 +1519,8 @@ position: relative;
 }
 
 .section-seven {
-  transform: translateY(-54em);
   z-index: 20;
+  margin-bottom: -8em;
 }
 
 .section-seven .section-content {
@@ -1558,7 +1681,6 @@ position: relative;
 }
 
 .section-eight {
-  transform: translateY(-62em);
   background: url(team-game.jpeg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1566,6 +1688,7 @@ position: relative;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-bottom: -8em;
 }
 
 .section-eight .section-content {
@@ -1675,14 +1798,14 @@ position: relative;
 }
 
 .section-nine {
-  margin-top: -70em;
 }
 
 .section-nine .section-content {
-  padding-bottom: 5em;
+  
   display: flex;
   justify-content: center;
-  padding-top: 5em;
+
+  padding: 8em 0
 }
 
 .section-nine .footer-column {
@@ -1786,6 +1909,24 @@ position: relative;
 
 /* Extra small devices (phones, 769px and down) */
 @media only screen and (max-width: 769px) {
+
+
+  #header-mobile {
+    display: flex;
+  }
+
+  #top-header-menu
+  {
+
+    background: #000000a6;
+
+  }
+
+  #top-header-menu.sticky #header,
+  #header
+  {
+    display: none;
+  }
 
   #instafeed {
     flex-direction: column;
