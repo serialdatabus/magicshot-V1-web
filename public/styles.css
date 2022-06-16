@@ -1913,9 +1913,9 @@ position: relative;
   .section-one .section-content {
     content: "";
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
-    background: -webkit-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
-    background: linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
+    background: -moz-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(177 138 138 / 40%) 100% );
+    background: -webkit-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(177 138 138 / 40%) 100% );
+    background: linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(177 138 138 / 40%) 100% );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 
     
