@@ -474,8 +474,11 @@ margin:0 0.4em;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 2em;
-  font-family: 'metropolis-medium';
+
+
+  font-size: 1em;
+  font-family: 'metropolis-bold';
+
 }
 
 
