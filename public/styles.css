@@ -1913,10 +1913,14 @@ position: relative;
   .section-one .section-content {
     content: "";
     background: rgb(0, 0, 0);
-    background: -moz-linear-gradient( 90deg, rgba(32, 13, 13, 0.75) 52%, rgba(255, 255, 255, 0.6) 194% );
-    background: -webkit-linear-gradient( 90deg, rgba(32, 13, 13, 0.75) 52%, rgba(255, 255, 255, 0.6) 194% );
-    background: linear-gradient( 90deg, rgba(32, 13, 13, 0.75) 52%, rgba(255, 255, 255, 0.6) 194% );
+    background: -moz-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
+    background: -webkit-linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
+    background: linear-gradient( 90deg, rgb(32 13 13 / 88%) 0%, rgb(255 255 255 / 33%) 100% );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+
+    
+
+    
 }
 
   .section-four .section-content .magic-shot-logo {
