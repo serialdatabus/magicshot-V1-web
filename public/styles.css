@@ -1277,7 +1277,7 @@ position: relative;
 
 .section-five {
   z-index: 20;
-  margin-bottom: -3em;
+  margin-bottom: -7em;
 }
 
 .section-five .cool-list-item .column-right .square-column {
@@ -1909,6 +1909,12 @@ position: relative;
 
 /* Extra small devices (phones, 769px and down) */
 @media only screen and (max-width: 769px) {
+
+
+  .section-five {
+
+    margin-bottom: -3em;
+  }
 
   .section-one .section-content {
     content: "";
