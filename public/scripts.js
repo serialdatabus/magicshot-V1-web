@@ -1,4 +1,9 @@
+var lastScrollTop = 0;
 $(document).ready(function(){
+
+    topHeaderMenu  = $("#top-header-menu");
+    headerheight = topHeaderMenu.outerHeight();
+
     $(".home-slider").owlCarousel({
         loop:true,
         margin:10,
@@ -35,6 +40,57 @@ $(document).ready(function(){
                 items:6
             }
         }
+    });
+
+
+
+    $(window).scroll(function() {
+
+        scrollDirection = "up";
+
+
+        if($(window).scrollTop() > lastScrollTop)
+        {
+            scrollDirection = "down";
+            
+        }
+
+        console.log("scrollTop: "+$(window).scrollTop());
+
+        console.log("scroll direction: "+scrollDirection);
+
+        lastScrollTop = $(window).scrollTop();
+
+        console.log("header height: "+headerheight);
+
+        if(scrollDirection==="up")
+        {
+
+
+            if($(window).scrollTop() > headerheight)
+            {
+
+                topHeaderMenu.removeClass("hidden");
+
+            }
+            else
+            {
+                topHeaderMenu.removeClass("sticky hidden");
+            }
+
+        }
+        else
+        {
+
+            if($(window).scrollTop() > headerheight)
+            {
+
+                topHeaderMenu.addClass("sticky hidden")
+
+            }
+
+        }
+
     });
 
   });
