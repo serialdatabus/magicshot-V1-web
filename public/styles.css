@@ -46,7 +46,17 @@ body {
 }
 
 
-
+.red-button
+{
+    color: white;
+    text-decoration: none;
+    background-color: #d10a35;
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: metropolis-medium;
+    padding: 0.8em;
+  
+}
 
 
 .cool-header-top
